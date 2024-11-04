@@ -5,6 +5,40 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Map Ctrl+s to Command+s",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.apple\\.Terminal$",
+                                            "^org\\.alacritty\\.Alacritty$",
+                                            "^com\\.iterm$",
+                                            "^com\\.iTerm.app$",
+                                            "^com\\.iterm.app$",
+                                            "com.googlecode.iterm2"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "s",
+                                    "modifiers": {
+                                        "mandatory": ["left_control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "s",
+                                        "modifiers": ["left_command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Map Ctrl+Right to Option+Right",
                         "manipulators": [
                             {

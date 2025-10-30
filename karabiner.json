@@ -772,6 +772,10 @@
                         {
                             "from": { "key_code": "non_us_backslash" },
                             "to": [{ "key_code": "grave_accent_and_tilde" }]
+                        },
+                        {
+                            "from": { "key_code": "right_option" },
+                            "to": [{ "key_code": "right_control" }]
                         }
                     ]
                 },
@@ -806,6 +810,19 @@
                         {
                             "from": { "key_code": "right_control" },
                             "to": [{ "key_code": "left_control" }]
+                        }
+                    ]
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 591,
+                        "vendor_id": 1452
+                    },
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "right_control" },
+                            "to": [{ "key_code": "right_control" }]
                         }
                     ]
                 }
@@ -851,7 +868,8 @@
                     "from": { "key_code": "scroll_lock" },
                     "to": [{ "apple_vendor_top_case_key_code": "keyboard_fn" }]
                 }
-            ]
+            ],
+            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         }
     ]
 }
